@@ -1,0 +1,55 @@
+POST
+    /login
+        username
+        password
+    /register
+        username
+        password 
+        profileImg 
+
+GET 
+    /users
+    /users/profileImg
+    /users/profilename
+    /users/files/:userId
+    /download
+    /fileShow
+
+
+
+users = [
+    {
+        userId:1,
+        username:"Ali",
+        profilImg:"ali.jpg"
+    },
+    {
+        userId:2,
+        username:"Suhrob",
+        profilImg:"al.jpg"
+    }
+]
+
+message = [{
+    messageId:1,
+    userIdFrom: 1,
+    userIdTo: 2,
+    messageType:"plain/text",
+    messageBody:"salom",
+    createAt:"19:00",
+    },
+    {
+    messageId:2,
+    userIdFrom: 2,
+    userIdTo: 1,
+    messageType:"plain/mp4",
+    messageBody:"comic.mp4",
+    createAt:"19:04",
+}
+]
+
+/message
+GET 
+POST 
+DELET
+UPDATE
